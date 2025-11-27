@@ -1,0 +1,11 @@
+name: CI
+on:
+  pull_request:
+    paths:
+      - '**.py'
+      - '.github/workflows/ci.yaml'
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sh -c "exit 0"
