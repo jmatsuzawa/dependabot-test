@@ -1,5 +1,5 @@
 name: Auto-merge Dependabot PRs
-on: pull_request
+on: pull_request_target
 jobs:
   merge:
     if: ${{ github.actor == 'dependabot[bot]' }}
@@ -9,6 +9,7 @@ jobs:
       pull-requests: write
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v5
       - name: Auto-merge Dependabot PRs
