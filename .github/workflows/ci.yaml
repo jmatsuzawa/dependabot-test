@@ -8,4 +8,4 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - run: sh -c "exit 0"
+      - run: sh -c "exit 1"
