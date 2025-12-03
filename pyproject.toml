@@ -13,6 +13,7 @@ dependencies = [
     "responses==0.25.8",
     "ruff==0.13.0",
     "scipy<1.16",
+    "structlog==25.4.0",
     "urllib3==2.5.0",
 ]
 
